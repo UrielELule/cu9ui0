@@ -1,0 +1,7 @@
+{
+  "name": "cuquio",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

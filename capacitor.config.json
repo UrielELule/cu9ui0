@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "cuquio",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
