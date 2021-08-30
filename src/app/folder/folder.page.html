@@ -1,4 +1,4 @@
-<ion-header [translucent]="true">
+<ion-header  class="ion-no-border">
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
@@ -7,15 +7,31 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">{{ folder }}</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" class="ion-padding">
+ <ion-text color="primary">
+   <h1>Bienvenido</h1>
+   <p>Ovnibus Cuquio <br> Jalisco</p>
+ </ion-text>
 
-  <div id="container">
-    <strong class="capitalize">{{ folder }}</strong>
-    <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+ <div class="actions">
+   <div class="login-buttons">
+     
+    <ion-button class="btn-qr" expand="full" shape="round">
+      <ion-icon slot="start" name="qr-code"></ion-icon>
+     Escanear Qr
+    </ion-button>
+
+   </div>
+   <div class="separator">
+     <span>O</span>
+     <span class="line left"></span>
+     <span class="line right"></span>
+   </div>
+   <ion-button expand="block" class="signup-btn">
+    <ion-icon slot="start" name="trash"></ion-icon>
+     Borrar escaneo
+   </ion-button>
+  
+ </div>
+
 </ion-content>
